@@ -411,16 +411,7 @@ h6 {
 #hero .container {
   text-align: center;
 }
-@media (max-width: 768px) {
-  .hero-slide {
-    min-height: 70vh; /* shorter on mobile */
-  }
 
-  .carousel-tagline {
-    text-align: center;
-    padding: 1.5rem;
-  }
-}
 #hero h2 {
   color: #fff;
   margin-bottom: 20px;
