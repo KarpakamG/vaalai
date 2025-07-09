@@ -368,8 +368,10 @@ h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
+  /* width: 100%;
+  height: 600px; */
   width: 100%;
-  height: 600px;
+  height: 100vh;
   background-color: rgba(63, 73, 83, 0.8);
   overflow: hidden;
   position: relative;
@@ -390,7 +392,7 @@ h6 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
 }
@@ -398,6 +400,8 @@ h6 {
 #hero .carousel-item::before {
   content: "";
   background-color: rgba(30, 35, 40, 0.5);
+  background-size: cover;
+  background-position: center;
 }
 
 #hero .carousel-container {
@@ -423,19 +427,6 @@ h6 {
   align-items: center;
 } */
 
-@media (max-width: 768px) {
-  .carousel-tagline h2 {
-    font-size: 1.5rem;
-  }
-
-  .carousel-tagline p {
-    font-size: 1rem;
-  }
-
-  .carousel-container {
-    padding: 20px;
-  }
-}
 
 #hero h2 {
   color: #fff;
@@ -568,6 +559,21 @@ h6 {
   
 }
 
+@media (max-width: 768px) {
+  #hero .carousel-container {
+    top: 20px;
+    left: 20px;
+    right: 20px;
+  }
+
+  #hero h2 {
+    font-size: 24px;
+  }
+
+  #hero p {
+    font-size: 14px;
+  }
+}
 
 
 /*--------------------------------------------------------------
