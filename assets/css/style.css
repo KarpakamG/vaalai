@@ -2186,10 +2186,23 @@ section {
 	color:#FFD80C
 }
 .content img{
-	max-height:400px;
+	/* max-height:400px;
 	float:right;
-	margin-right:2rem
+	margin-right:2rem */
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
 }
+@media (max-width: 768px) {
+  .content img {
+    width: 100vw;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
 .content p{
 	line-height:160%;
 	letter-spacing:.6px
