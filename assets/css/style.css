@@ -408,7 +408,8 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+   position: absolute; 
+  /* position: relative; */
   bottom: 0;
   top: 70px;
   left: 50px;
@@ -574,6 +575,8 @@ h6 {
     font-size: 14px;
   }
 }
+
+
 
 
 /*--------------------------------------------------------------
