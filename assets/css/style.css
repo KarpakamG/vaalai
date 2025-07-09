@@ -390,7 +390,7 @@ h6 {
 
 #hero .carousel-item {
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   height: 100%;
   display: flex;
@@ -561,12 +561,18 @@ h6 {
 }
 
 @media (max-width: 768px) {
+  #hero .carousel-item {
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+  }
+
   #hero .carousel-container {
     top: 20px;
     left: 20px;
     right: 20px;
   }
-
+  
   #hero h2 {
     font-size: 24px;
   }
